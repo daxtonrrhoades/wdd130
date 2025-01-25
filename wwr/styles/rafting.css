@@ -1,0 +1,78 @@
+:root {
+    --primary-color:#7EA8BE;
+    --secondary-color:#59546C;
+    --accent-color1:#646536;
+    --accent-color2:#F2E3BC;
+    --accent-color3:#2a2344;
+
+    --heading-font: 'Indie Flower', serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+body {
+    font-family: var(--paragraph-font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font)
+}
+a {
+    text-decoration: none;
+}
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+}
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f2e3bc70;
+    padding: 1rem;
+    font-size: 3em;
+    color: var(--accent-color3);
+}
+.hero article {
+    background-color: #f2e3bc70;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+}
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 13rem;
+}
+.hero article p {
+    color:var(--accent-color3);
+    font-size: 1.5rem;
+    padding:1 rem;
+    font-weight: 500;
+}
+.history p {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+.history h2, .adventure h2 {
+    color: var(--accent-color1);
+}
+footer {
+    background-color: #59546C;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 2rem;
+}
+.sociallinks {
+    grid-column: 3;
+    justify-self: end;
+}
+.sociallinks img {
+    width: 3em;
+}
