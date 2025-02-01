@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#7EA8BE;
+    --primary-color:#8DA9C4;
     --secondary-color:#59546C;
     --accent-color1:#646536;
     --accent-color2:#F2E3BC;
@@ -8,25 +8,63 @@
     --heading-font: 'Indie Flower', serif;
     --paragraph-font: 'Open Sans', sans-serif;
 }
+
 body {
     font-family: var(--paragraph-font);
 }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font)
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
 }
+
 a {
     text-decoration: none;
 }
-header, main, footer {
+
+header{
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    padding: 0.5rem;
+    margin: -.14rem;
+    color: var(--accent-color3);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+
+}
+
+nav a:hover {
+    background-color: var(--accent-color2);
+    color: var(--accent-color1);
+    font-weight: 800;
+}
+
+main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .hero {
     position: relative;
 }
+
 .hero img {
     width: 100%;
+    padding: 1rem;
 }
+
 .hero h1 {
     position: absolute;
     top: 1em;
@@ -37,6 +75,7 @@ header, main, footer {
     font-size: 3em;
     color: var(--accent-color3);
 }
+
 .hero article {
     background-color: #f2e3bc70;
     position: absolute;
@@ -44,35 +83,75 @@ header, main, footer {
     left: 2rem;
     right: 2rem;
 }
+
 .hero article img {
     float: right;
     margin: 2rem;
     width: 13rem;
 }
+
 .hero article p {
     color:var(--accent-color3);
     font-size: 1.5rem;
     padding: 1rem;
     font-weight: 500;
 }
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 3em;
+    margin: 75px;
+
+}
+
 .history p {
     color: var(--secondary-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
+
 .history h2, .adventure h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 2em 0;
     color: var(--accent-color1);
 }
+
+.adventure {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3.5rem;
+    justify-items: center;
+}
+.adventure img {
+    width: 200%;
+    height: auto;
+}
+figure {
+    color: var(--accent-color3);
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+    width: 200%;
+}
+
 footer {
-    background-color: #59546C;
-    color: #fff;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--accent-color3);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     padding: 2rem;
 }
+
 .sociallinks {
     grid-column: 3;
     justify-self: end;
 }
+
 .sociallinks img {
     width: 3em;
 }
