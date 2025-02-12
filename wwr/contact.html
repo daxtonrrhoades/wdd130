@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rumbling Rapids</title>
+    <meta name="description"
+        content="This is a web page to provide information for visitors to contact us about our white river rafting company" />
+    <meta name="author" content="Daxton Rhoades" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/wwr_logo.jpg" alt="Site Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <form class="contact">
+            <h1 class="title center">Contact Us</h1>
+            <fieldset class="contact-input">
+                <div class="form-item column2">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name"><br>
+                </div>
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email"><br>
+                </div>
+                <div class="form-item column1">
+                    <label for="contact-reason">Reason For Contact:</label><br>
+                    <input type="radio" name="contact-reason" id="general">General Inquiry<br>
+                    <input type="radio" name="contact-reason" id="reservation">Reservation Question<br>
+                    <input type="radio" name="contact-reason" id="web-questions">Website Question<br>
+                    <fieldset>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="25" rows="10"></textarea><br>
+                    </fieldset>
+                    <div class="subscribe">
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="grid company-info">
+            <h2>Our Company</h2>
+            <p>123 Sesame St.</p>
+            <p>New York, NY 10023</p>
+            <p>(123) 456-7890</p>
+            <p>rumblingrapids@gmail.com</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.582686763451!2d-73.98618771002035!3d40.77120239760254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2591db854a815%3A0x1453fa937595b758!2s123%20Sesame%20St.%2C%20New%20York%2C%20NY%2010023!5e0!3m2!1sen!2sus!4v1739067841603!5m2!1sen!2sus"
+            width="600" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="grid employees">
+            <figure>
+                <img src="images/ceo.jpg" alt="Our CEO">
+                <figcaption>John Johnson, CEO</figcaption>
+            </figure>
+            <figure>
+                <img src="images/vp.jpg" alt="Our VP">
+                <figcaption>Mike Taylor, VP</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting-guide.jpg" alt="Our Rafting Guide">
+                <figcaption>Joe Smith, Rafting Guide</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 | Rumbling Rapids | Daxton Rhoades</p>
+        <div class="wireframe">
+            <a href="wireframes/wireframe.xcf">Wireframe</a>
+        </div>
+        <div class="sociallinks">
+            <a href="https://facebook.com" class="no-underline" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" class="no-underline" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://x.com" class="no-underline" target="_blank">
+                <img src="images/x_logo.svg" alt="X">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
